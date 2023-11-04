@@ -1,0 +1,22 @@
+//crear una nuva pagina 
+ionic generate page NAME
+
+//en la pagina en donde se va agregar el boton + se tiene que dar una funcion con click DESDE EL PAGE.HTML
+
+<ion-fab vertical="bottom" horizontal="end" 
+      slot="fixed">
+      <ion-fab-button (click)="registrar()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      </ion-fab>
+
+//desde donde se programa los tab1.page.ts
+
+
+registrar(){
+  this.route.navigate(['/registrarevento/']);
+}
+
+}
+
+
